@@ -30,3 +30,10 @@
 *.exe
 *.out
 *.app
+
+# IDE config dirs
+.vs/
+
+# Build dirs
+Debug/
+Release/
