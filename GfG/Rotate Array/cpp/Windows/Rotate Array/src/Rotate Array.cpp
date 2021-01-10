@@ -1,20 +1,46 @@
-// Rotate Array.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+#include <stdio.h>
 #include <iostream>
+#include <fstream>
+#include <list>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+#include <StreamHelpers.h>
+
+const std::string g_test_dir("C:\\repos\\personal\\practice\\GfG\\Rotate Array\\Tests\\");
+
+std::vector<uint32_t> RotateArray(const std::vector<uint32_t> arr) {
+	return arr;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+int main() {
+	//code
+	std::list<std::string> files = { "example.txt" };
+	for (auto file : files) {
+		auto input_stream = std::ifstream(g_test_dir + file);
+		auto out_stream = std::ofstream(g_test_dir + file + ".out");
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+ 		int test_cases;
+		input_stream >> test_cases;
+		Flush(input_stream);
+		for (int test_case = 0; test_case < test_cases; ++test_case) {
+			int N, D;
+			input_stream >> N >> D;
+			Flush(input_stream);
+
+			auto arr = std::vector<uint32_t>(N);
+			input_stream >> arr;
+			Flush(input_stream);
+
+			auto result = RotateArray(arr);
+			out_stream << result << std::endl;
+		}
+		auto test = std::vector<std::vector<uint32_t>>(5, std::vector<uint32_t>(5));
+		input_stream >> test;
+
+		out_stream << test << std::endl;
+		input_stream.close();
+		out_stream.close();
+
+	}
+
+	return 0;
+}
