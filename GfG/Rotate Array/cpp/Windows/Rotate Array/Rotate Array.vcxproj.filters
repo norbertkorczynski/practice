@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Rotate Array.cpp">
+    <ClCompile Include="src\Rotate Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -4,6 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Rotate Array", "Rotate Array.vcxproj", "{7D6C5ECC-7F28-4AA9-8715-F4940BE8F0A7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836} = {B1EB5FB3-F668-4D98-B777-0BCA07B05836}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "practice_helpers", "..\..\..\..\..\own_libs\cpp\Windows\practice_helpers\practice_helpers.vcxproj", "{B1EB5FB3-F668-4D98-B777-0BCA07B05836}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +26,14 @@ Global
 		{7D6C5ECC-7F28-4AA9-8715-F4940BE8F0A7}.Release|x64.Build.0 = Release|x64
 		{7D6C5ECC-7F28-4AA9-8715-F4940BE8F0A7}.Release|x86.ActiveCfg = Release|Win32
 		{7D6C5ECC-7F28-4AA9-8715-F4940BE8F0A7}.Release|x86.Build.0 = Release|Win32
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Debug|x64.ActiveCfg = Debug|x64
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Debug|x64.Build.0 = Debug|x64
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Debug|x86.ActiveCfg = Debug|Win32
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Debug|x86.Build.0 = Debug|Win32
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Release|x64.ActiveCfg = Release|x64
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Release|x64.Build.0 = Release|x64
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Release|x86.ActiveCfg = Release|Win32
+		{B1EB5FB3-F668-4D98-B777-0BCA07B05836}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
