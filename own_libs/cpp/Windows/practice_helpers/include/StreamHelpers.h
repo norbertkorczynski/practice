@@ -4,7 +4,6 @@
 #include <vector>
 
 //istream
-
 template <typename T>
 void Flush(T& stream, int delimiter = '\n') {
 	stream.ignore(std::numeric_limits<std::streamsize>::max(), delimiter);
